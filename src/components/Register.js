@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../config/firebase';
 
-const Login = ({ history }) => {
-  // credentials registered
-  // fbtest@test.com / 123456
-
+const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -20,9 +17,9 @@ const Login = ({ history }) => {
 
   return (
     <>
-      <div className='login-page'>
-        <form className='login-form' onSubmit={submitHandler}>
-          <div className='login-email'>
+      <div className='signup-page'>
+        <form className='signup-form' onSubmit={submitHandler}>
+          <div className='signup-email'>
             <label>Email: </label>
             <input
               type='email'
@@ -33,7 +30,7 @@ const Login = ({ history }) => {
             />
           </div>
 
-          <div className='login-password'>
+          <div className='signup-password'>
             <label>Password: </label>
             <input
               type='password'
@@ -44,15 +41,15 @@ const Login = ({ history }) => {
             />
           </div>
 
-          <div className='login-submit'>
-            <button type='submit' className='login-button'>
-              Login
+          <div className='signup-submit'>
+            <button type='submit' className='signup-button'>
+              Register
             </button>
           </div>
 
-          <div className='to-register-from-login'>
+          <div className='to-login-from-register'>
             <p>
-              Don't have account? <Link to='/register'>Sign up</Link>
+              Have an account? <Link to='/login'>Login</Link>
             </p>
           </div>
         </form>
@@ -61,4 +58,4 @@ const Login = ({ history }) => {
   );
 };
 
-export default Login;
+export default Register;

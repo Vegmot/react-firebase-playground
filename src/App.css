@@ -1,0 +1,155 @@
+/* Global */
+* {
+  padding: 0;
+  margin: 0;
+  background: #c8c8c8;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* HomeScreen.js */
+.container {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 2px solid #000;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 6px 6px rgba(50, 50, 50, 0.5);
+  perspective: 1000px;
+}
+
+.red-box,
+.green-box,
+.blue-box,
+.yellow-box {
+  width: 24%;
+  height: 24%;
+  margin: 3px;
+  display: flex;
+  border-radius: 50%;
+}
+
+.red-box {
+  border: 1px solid red;
+  box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
+}
+.green-box {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 5px rgba(150, 150, 150, 0.5);
+}
+.blue-box {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px 5px rgba(200, 200, 200, 0.5);
+}
+.yellow-box {
+  border: 1px solid yellow;
+  box-shadow: 0 0 5px 5px rgba(250, 250, 250, 0.5);
+}
+
+.box-in-a-box {
+  width: 25%;
+  height: 25%;
+  margin: auto;
+}
+
+.box-in-a-box.red {
+  border: 1px solid yellow;
+  box-shadow: 0 0 5px 5px rgba(250, 250, 250, 0.5);
+}
+.box-in-a-box.green {
+  border: 1px solid red;
+  box-shadow: 0 0 5px 5px rgba(180, 180, 180, 0.5);
+}
+.box-in-a-box.blue {
+  border: 1px solid green;
+  box-shadow: 0 0 5px 5px rgba(150, 150, 150, 0.5);
+}
+.box-in-a-box.yellow {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px 5px rgba(100, 100, 100, 0.5);
+}
+
+/* Login.js */
+.login-page {
+  display: flex;
+  height: 50vh;
+}
+
+.login-form {
+  width: 25%;
+  margin: auto;
+}
+
+.login-form input {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.login-password {
+  margin-top: 10px;
+}
+
+.login-submit {
+  margin-top: 30px;
+}
+
+.login-submit button {
+  padding: 5px 40px;
+  display: block;
+  width: 100%;
+  background: crimson;
+  border: 1px solid #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.to-register-from-login {
+  margin-top: 30px;
+}
+
+/* Register.js */
+.signup-page {
+  display: flex;
+  height: 50vh;
+}
+
+.signup-form {
+  width: 25%;
+  margin: auto;
+}
+
+.signup-form input {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.signup-password {
+  margin-top: 10px;
+}
+
+.signup-submit {
+  margin-top: 30px;
+}
+
+.signup-submit button {
+  padding: 5px 40px;
+  display: block;
+  width: 100%;
+  background: chocolate;
+  border: 1px solid #000;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.to-login-from-register {
+  margin-top: 30px;
+}
