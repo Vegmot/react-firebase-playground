@@ -13,6 +13,10 @@ const HomeScreen = () => {
         Go to <Link to='/register'>Register</Link> page to register
       </p>
 
+      <p>
+        Go <Link to='/'>Home</Link> to stay home (?)
+      </p>
+
       <div className='container'>
         <div className='red-box'>
           <div className='box-in-a-box red'></div>
